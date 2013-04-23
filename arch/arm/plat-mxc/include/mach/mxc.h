@@ -234,7 +234,7 @@ extern unsigned int __mxc_cpu_type;
 #endif
 
 #ifdef CONFIG_SOC_IMX6Q
-#  define mxc_cpu_type __mxc_cpu_type
+#  define mxc_cpu_type MXC_CPU_MX6DL	//__mxc_cpu_type
 # define cpu_is_mx6q()		(mxc_cpu_type == MXC_CPU_MX6Q)
 # define cpu_is_mx6dl()		(mxc_cpu_type == MXC_CPU_MX6DL)
 # define cpu_is_mx6sl()		(mxc_cpu_type == MXC_CPU_MX6SL)
